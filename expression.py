@@ -13,7 +13,6 @@ def numberic(strValue):
     val = None
     try:
         val = int(strValue)
-        val = int(strValue)
     except ValueError:
         if val:
             return val
