@@ -159,7 +159,7 @@ class BuiltIn(object):
     def _if(args, scope):
         len_a = len(args)
         if len_a < 2:
-            raise Exception("if need at least arguments.")
+            raise Exception("if need at least 2 arguments.")
         if args[0].evaluate(scope):
             return args[1].evaluate(scope)
         elif len_a > 2:
